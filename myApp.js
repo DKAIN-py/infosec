@@ -47,7 +47,6 @@ const app = express();
 
 
 
-module.exports = app;
 const api = require('./server.js');
 app.use(express.static('public'));
 app.disable('strict-transport-security');
@@ -59,3 +58,4 @@ let port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server for learning infosec started on port ${port}`);
 });
+module.exports = app;
